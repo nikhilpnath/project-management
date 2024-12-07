@@ -1,0 +1,146 @@
+:root {
+  --bg-clr: black;
+  --text-clr: white;
+  --btn-clr: #1e1c1c;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.brand {
+  color: #df3ca6;
+}
+
+.brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.btn {
+  font-size: 15px;
+}
+
+.btn-primary,
+.bg-primary {
+  background-color: #df3ca6 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #df3ca6;
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #7430f9;
+}
+
+.btn-secondary:hover {
+  background-color: #7430f9;
+  opacity: 0.9;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.updateIconOpen {
+  rotate: 180deg;
+  transition: 0.3s ease;
+}
+.updateIconClose {
+  transition: 0.3s ease;
+}
+
+/* theme change icons */
+.theme-icons {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Dark theme   */
+
+#dark {
+  background-color: var(--bg-clr);
+}
+#dark nav {
+  background: #140f0f !important;
+}
+
+#dark th,
+#dark td,
+#dark .project-card,
+#dark .project-card div p,
+#dark .project-card-info ul li,
+#dark .mutation form div label,
+#dark .mutation form div input,
+#dark .mutation form div textarea,
+#dark .mutation form div select,
+#dark .not-found {
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+}
+
+#dark .project-card a,
+#dark .go-back-btn,
+#dark .not-found a {
+  background: var(--btn-clr) !important;
+  transition: 0.5s ease-in-out;
+  color: var(--text-clr);
+  border: none;
+}
+
+#dark .project-card a:hover,
+#dark .go-back-btn:hover,
+#dark .not-found a:hover {
+  background-color: var(--btn-clr);
+  opacity: 0.9;
+}
+#dark .project-card-info {
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+  border: 1px solid white;
+}
+
+#dark .mutation {
+  background-color: var(--bg-clr);
+  border: 1px solid white;
+}
+
+/* responsive */
+@media screen and (max-width: 330px) {
+  .modal-buttons {
+    flex-direction: column;
+    width: 8rem;
+  }
+  .brand div {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  table tr th:nth-child(2),
+  table tr td:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  table tr th:nth-child(3),
+  table tr td:nth-child(3) {
+    display: none;
+  }
+  .project-card-info {
+    width: 100% !important;
+  }
+}
